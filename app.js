@@ -18,5 +18,5 @@ app.get('/login', (req, res) => {
 });
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
-    console.log('Servidor iniciado en http://localhost:3030' + port);
+    console.log('Servidor iniciado en http://localhost:' + port);
 });
