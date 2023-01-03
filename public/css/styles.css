@@ -271,6 +271,7 @@ main.login form button:hover{
   }
   footer > h4{    
     margin-top: 0.2em;
-    font-size: 0.4em;     
+    font-size: 0.65em;
+    margin-top: 2%;     
   }
 }
