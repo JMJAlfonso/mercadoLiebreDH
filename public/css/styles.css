@@ -278,4 +278,11 @@ main.login form button:hover{
  article:hover #credit-card ,#gift,#secure{
     color: #39b54a; 
   }
+  article:hover #gift{
+    color: #39b54a; 
+  }
+  article:hover #secure{
+    color: #39b54a; 
+  }
+  
 }
