@@ -275,7 +275,7 @@ main.login form button:hover{
     margin-left: 7%;     
   }
 
-  footer >div> article:hover #credit-card ,#gift,#secure{
+ article:hover #credit-card ,#gift,#secure{
     color: #39b54a; 
   }
 }
