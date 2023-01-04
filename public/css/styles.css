@@ -255,8 +255,9 @@ main.login form button:hover{
     justify-content: space-evenly;
     margin: 1% 8%;
   }
-#credit-card ,#gift,#secure{
-    color: blue;    
+#credit-card, #gift, #secure{
+    color: blue; 
+    margin-bottom: 1.5%;   
   }
   footer > div > article > h4{
     margin-top: 0.2em;
@@ -275,7 +276,7 @@ main.login form button:hover{
     margin-left: 7%;     
   }
 
- article:hover #credit-card ,#gift,#secure{
+ article:hover #credit-card{
     color: #39b54a; 
   }
   article:hover #gift{
