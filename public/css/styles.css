@@ -254,9 +254,8 @@ main.login form button:hover{
     text-align: center;
     justify-content: space-evenly;
     margin: 1% 8%;
-  };
-  footer i.fa-solid.fa-credit-card ,
-  i.fa-sharp.fa-solid.fa-gift,i.fa-solid.fas.fa-user-shield{
+  }
+#credit-card ,#gift,#secure{
     color: blue;    
   }
   footer > div > article > h4{
