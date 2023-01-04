@@ -253,9 +253,9 @@ main.login form button:hover{
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
-    margin-top: 1%;
+    margin: 1% 8%;
   };
-  .fa-credit-card,.fa-gift,.fa-user-shield{
+  footer > div > article >i{
     color: blue;    
   }
   footer > div > article > h4{
@@ -266,7 +266,7 @@ main.login form button:hover{
   }
   footer > div > article > p{    
     font-size: 0.7em;
-    margin: 0.5% 10%;     
+    margin-top: 0.2%;    
   }
   footer > h4{    
     margin-top: 0.2em;
