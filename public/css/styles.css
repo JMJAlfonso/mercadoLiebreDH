@@ -255,7 +255,7 @@ main.login form button:hover{
     justify-content: space-evenly;
     margin: 1% 8%;
   };
-  footer .fa-solid ,.fa-sharp{
+  footer i.fa-solid ,i.fa-sharp{
     color: blue;    
   }
   footer > div > article > h4{
