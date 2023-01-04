@@ -248,22 +248,23 @@ main.login form button:hover{
   footer{
     height: 20vh;
   }
-  footer >div{
+  footer > div{
     display: flex;
     align-items: center
   };
-  footer > article > i{
+  footer > div > article > i{
     align-content: center;
     width: 30px;
     height: 30px;
+    justify-content: center;
   }
-  footer > article > h4{
+  footer > div > article > h4{
     margin-top: 0.2em;
     font-size: 0.7em;
     text-align: center;
      
   }
-  footer > article > p{
+  footer > div > article > p{
     margin-top: 0.2em;
     font-size: 0.4em;
     text-align: center;
@@ -273,5 +274,9 @@ main.login form button:hover{
     margin-top: 0.2em;
     font-size: 0.65em;
     margin-top: 2%;     
+  }
+
+  footer >div> article:hover i{
+    color: #39b54a;
   }
 }
