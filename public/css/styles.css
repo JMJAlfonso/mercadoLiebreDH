@@ -256,8 +256,9 @@ main.login form button:hover{
     margin: 1% 8%;
   }
 #credit-card, #gift, #secure{
-    color: blue; 
-    margin-bottom: 1.5%;   
+    color: royalblue; 
+    margin-bottom: 1.5%; 
+    font-size: 150%;  
   }
   footer > div > article > h4{
     margin-top: 0.2em;
