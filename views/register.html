@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/registerStyles.css">
     </head>
     <body>
         <header>
@@ -38,63 +38,100 @@
             </div>
         </header>
         <main class="register">
-            <form action="/" autocomplete="off">
-                <input type="text" name="name" placeholder="Nombre y apellido">
-                <input type="text" name="user" placeholder="Nombre de usuario">
-                <input type="email" name="email" placeholder="E-mail">
+            <form id="form-register" action="/" autocomplete="off">
+                <input class= "input-register" type="text" name="name" placeholder="Nombre y apellido" required required minlength="6" pattern="[a-z]{1,15}" title="Only contain lowercase letters">
+                <span class="feedback" ></span>
+                <input class= "input-register" type="text" name="user" placeholder="Nombre de usuario" required minlength="4">
+                <span class="feedback" ></span>
+                <input class= "input-register" type="email" name="email" placeholder="E-mail" required>
+                <span class="feedback" ></span>
                 <br>
-                <label for="birth_date"><b>Fecha de nacimiento</b></label>
+                <label class="register-form-label" for="birth_date"><b>Fecha de nacimiento</b></label>
                 <br>
-                <input type="date" name="birth_date" id="birth_date">
+                <input  class= "input-birth" type="date" name="birth_date" id="birth_date" required>
+                <span class="feedback" ></span>
                 <br>
-                <input type="text" name="addres" placeholder="Domicilio">
+                <input  class= "input-home" type="text" name="addres" placeholder="Domicilio" required>
+                <span class="feedback" ></span>
                 <h4>Perfil del usuario</h4>
-                <div class="profile">
-                    <input type="radio" name="profile" value="buy" id="buy">
-                    <label for="buy">Comprador</label>
-                    <input type="radio" name="profile" value="sell" id="sell">
-                    <label for="sell">Vendedor</label>
+                <div class="profile" required>
+                    <input class= "input-register" type="radio" name="profile" value="buy" id="buy">
+                    <label class= "input-register" for="buy">Comprador</label>
+                    <input class= "input-register" type="radio" name="profile" value="sell" id="sell">
+                    <label class= "input-register" for="sell">Vendedor</label>
+                    <span class="feedback" ></span>
                 </div>
 
-                <h4>Intereses</h4>
-                <div class="interests">
-                    <div>
-                        <input type="checkbox" name="interests" value="a" id="a">
+                <h4 class="register-form-label" >Intereses</h4>
+                <div class="interests" required>
+                    <div class="interest" >
+                        <input class= "input-register" type="checkbox" name="interests" value="a" id="a">
                         <label for="a">Electro</label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="b" id="b">
+                    <div class="interest">
+                        <input class= "input-register" type="checkbox" name="interests" value="b" id="b">
                         <label for="b">Moda</label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="c" id="c">
+                    <div class="interest">
+                        <input class= "input-register" type="checkbox" name="interests" value="c" id="c">
                         <label for="c">Hogar</label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="d" id="d">
+                    <div class="interest">
+                        <input class= "input-register" type="checkbox" name="interests" value="d" id="d">
                         <label for="d">Juguetería</label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="e" id="e">
+                    <div class="interest">
+                        <input class= "input-register" type="checkbox" name="interests" value="e" id="e">
                         <label for="e">Vida sana</label>
                     </div>
+                    <span class="feedback" ></span>
                 </div>
                 
                 <h4>Elegí tu foto de usuario</h4>
-                <input type="file" name="avatar">
+                <input class= "input-register"  type="file" name="avatar" required>
                 <br>
                 <br>
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                <input class= "input-register" type="password" name="pass" placeholder="Elegí tu contraseña" required minlength="6">
+                <span class="feedback" ></span>
+                <input class= "input-register" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña" required minlength="6">
+                <span class="feedback" ></span>
                 <br>
                 <br>
-                <a href="/"><button>Enviar</button></a>
-                <button type="reset">Borrar</button>
+                <a id="bregister-send" href="/"><button>Enviar</button></a>
+                <button id="bregister-clear" type="reset">Borrar</button>
                 <br>
                 <br>
             </form>
         </main>
         <footer>
+            <div>            
+                <article>
+                    <i class="fa-solid fas fa-credit-card" id="credit-card"></i>
+                    <h4>Pagá con tarjeta o en efectivo</h4>
+                    <p>
+                        Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre
+                        es seguro!
+                    </p>
+                </article>
+                <article>
+                    <i class="fa-sharp fas fa-solid fa-gift" id="gift"></i>
+                    <h4>Envío gratis desde $ 2.500</h4>
+                    <p>
+                        Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio
+                        de
+                        Mercado Puntos.
+                    </p>
+                </article>
+                <article>
+                    <i class="fa-solid fas fa-user-shield" id="secure"></i>
+                    <h4>Seguridad, de principio a fin</h4>
+                    <p>
+                        ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre
+                        protegid@.
+                    </p>
+                </article>
+            </div>
+            <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
         </footer>
     </body>
 </html>

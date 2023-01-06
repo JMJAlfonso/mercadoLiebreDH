@@ -1,0 +1,346 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;  ;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 12px;
+  }
+  
+  div.top-header {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center;
+  }
+  
+  header {
+    background-color: #eac926;
+  }
+  
+  header div.logo {
+    padding: 10px;
+    width: 50%;
+  }
+  
+  header nav {
+    font-size: 12px;
+    display: none;
+  }
+  
+  header ul li {
+    list-style-type: none;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  header .form {
+    width: 50%;
+    display: flex;
+  }
+  
+  header .form .input {
+    background-color: #fff;
+    color: #666;
+    width: 100%;
+    height: 3em;
+    border-radius: 0.3em;
+    font-size: 70%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header .form .submit {
+    background-color: #fff;
+    position: relative;
+    right: 15px;
+    border-radius: 0.3em;
+    display: flex;
+    align-items: center;
+  }
+  
+  header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  header ul {
+    margin-bottom: 16px;
+  }
+  
+  div.burger-menu {
+    text-align: center;
+  }
+  
+  div.burger-menu i {
+    background-color: #0044aa;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+  }
+  
+  article div.main-article {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+  }
+     
+  main {
+    background-color: #ebebeb ;
+  }
+  #form-register{
+    margin: 5% 20%;
+    background-color: gainsboro;
+    border-radius: 0.2em;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5% 1.5% 0% 1.5%;
+  }
+  .input-register{
+    margin-top: 5%;
+    font-size: 0.8em;
+  }    
+  .interests{
+    font-size: 0.8em;
+  }
+  .profile{
+    display: flex;
+  }
+  main >form> h4 {
+    margin: 8% 0%;
+  }
+  #bregister-send{
+    width: 100%;    
+    margin-bottom: 4%;
+  }
+  #bregister-send >button{
+    width: 100%;
+  }
+  
+  #credit-card, #gift, #secure{
+    color: royalblue;
+    font-size: 2em;
+    margin: 10px 48%;
+    text-align: center;
+  }
+  footer{
+    background-color: white;
+  }
+  footer > div > article{
+    margin-bottom: 10%;
+  
+  }
+  footer > div > article > h4{
+    margin-top: 0.2em;
+    font-size: 1em;
+    text-align: center;
+     
+  }
+  footer > div > article > p{    
+    font-size: 0.7em;
+    margin-top: 0.2%;
+    margin: 0% 24%;
+    text-align: center;
+  
+  }
+  footer > h4{       
+    font-size: 0.55em;      
+    margin-left: 5%;
+    padding-bottom: 3%;    
+  }
+  
+  
+  /*---------tablet----------*/
+  @media (min-width: 361px){
+    .input-register{
+        margin-top: 5%;
+        font-size: 0.8em;
+      }
+      .interests{
+        font-size: 0.8em;
+      }
+      .profile{
+        display: flex;
+      }
+      main >form> h4 {
+        margin: 8% 0%;
+      }
+      #bregister-send{
+        width: 100%;    
+        margin-bottom: 4%;
+      }
+      #bregister-send >button{
+        width: 100%;
+      }
+        
+  }
+  /*---------desktop----------*/
+  @media (min-width: 769px) {
+
+    .input-register{
+        margin-top: 5%;
+        font-size: 1.5em;
+        margin-right: 2%;
+      }
+    .input-birth{
+    font-size: 1.8em;
+    margin-bottom: 5%;
+    }
+    .input-home{
+    font-size: 1.5em;
+    
+    }
+      .interests{
+        font-size: 1.5em;
+      }
+      .profile{
+        display: flex;
+      }
+      .register-form-label{
+        font-size: 2em;
+        margin-top: 5%;
+        margin-bottom: 2%;
+      }
+      main >form> h4 {
+        font-size: 2em;
+        margin-top: 5%;
+        margin-bottom: 0%;
+      }
+      #bregister-send{
+        width: 98%;   
+        margin-bottom: 4%;
+        font-size: 1em;
+      }
+      #bregister-send >button{
+        width: 100%; 
+        font-size: 1.5em;      
+      }
+      #bregister-clear {
+        width: 98%;
+        font-size: 1.5em; 
+      }
+
+    div.top-header {
+      padding: 5%;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+  }
+  
+    header div.logo {
+      width: 30%;
+    }
+  
+    header .form {
+      display: flex;
+      width: 55%;
+      margin-right: -2%;
+    }
+    header .form .input {     
+      width: 90%;
+      font-size: 1em;
+      height: 2.3em;
+    }
+    header .form .submit {
+      background-color: #fff;
+      background-color: #fff;
+      color: #666;
+      width: 6%;    
+      border-radius: 0.3em;
+    }
+  
+    header div.top-header p {
+      width: 47%;
+      margin-top: 0;
+      font-size: 0.8em;
+    }
+  
+    header nav {
+      display: flex;
+      font-size: 0.8em;
+    }
+  
+    header nav ul {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+    }
+    
+    header nav ul:nth-child(1) {
+      padding-left: 64px;
+    }
+  
+    header nav ul:nth-child(2) {
+      justify-content: flex-end;
+      padding-right: 64px;
+    }
+  
+    div.burger-menu {
+      display: none;
+    }    
+   
+    footer > div{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+      margin: 1% 6%;
+    }
+  #credit-card, #gift, #secure{
+      color: royalblue; 
+      margin-bottom: 1.5%; 
+      font-size: 2em;  
+    }    
+    footer > div > article {
+      margin: 4% 0%;
+  }
+    footer > div > article > h4{
+        margin-top: 0.2em;
+        font-size: 1em;
+        text-align: center;       
+    }
+    footer > div > article > p{    
+        font-size: 0.7em;
+        margin: 0.2% 10%;
+    }
+    footer > h4{    
+      margin-top: 0.2em;
+      font-size: 0.7em;
+      margin-top: 2%;
+      margin-left: 6%;     
+    }
+  
+   article:hover #credit-card{
+      color: #39b54a; 
+    }
+    article:hover #gift{
+      color: #39b54a; 
+    }
+    article:hover #secure{
+      color: #39b54a; 
+    }
+    
+  }
